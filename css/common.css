@@ -13,7 +13,10 @@ a {
 	align-items: center;
 }
 .pick {
-	padding: 20px 30px;
+	padding: 30px 30px;
+	border: 1px solid black;
+	color: #fff;
+	background-color: black;
 }
 .lottoGroup {
 	display: flex;
