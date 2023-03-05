@@ -2,9 +2,13 @@ a {
 	color: inherit;
 	text-decoration: none;
 }
-
+body * {
+	box-sizing: border-box;
+}
 .lotto {
-	width: 80%;
+	width: 100%;
+	max-width: 1440px;
+	padding: 0 20px;
 	margin: 0 auto;
 	margin-top: 200px;
 	display: flex;
@@ -14,39 +18,69 @@ a {
 }
 .pick {
 	padding: 30px 30px;
-	border: 1px solid black;
 	color: #fff;
 	background-color: black;
+	border-radius: 25px;
 }
+
 .lottoGroup {
 	display: flex;
-	gap: 5%;
-	width: 100%;
+	gap: 15px;
+	width: auto;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 30px;
+	border-radius: 30px;
+	background-color: #fafafa;
+	position: relative;
+}
+.lottoGroup p {
+	position: absolute;
+	bottom: -30px;
+	left: 50%;
+	transform: translateX(-50%);
 }
 .lottoGroup li {
-	flex: 1;
+	width: 60px;
 	aspect-ratio: 1/1;
-	background-color: yellow;
+	background-color: #aaa;
 	border-radius: 50%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: 1px solid black;
+	color: #fff;
+	text-shadow: 0px 0px 3px rgb(73 57 0 / 80%);
+	font-size: 28px;
 }
 .bonusNum {
-	width: 100%;
+	width: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 30px;
+	padding: 30px;
+	border-radius: 30px;
+	margin-top: 30px;
+	background-color: #fafafa;
+	position: relative;
+}
+.bonusNum p {
+	position: absolute;
+	width: 75px;
+	text-align: center;
+	bottom: -30px;
+	left: 50%;
+	transform: translateX(-50%);
 }
 .bonusNum span {
 	display: flex;
-	width: 10%;
+	width: 60px;
 	aspect-ratio: 1/1;
 	justify-content: center;
 	align-items: center;
 	border-radius: 50%;
-	background-color: green;
-	border: 1px solid black;
+	background-color: #aaa;
+	color: #fff;
+	text-shadow: 0px 0px 3px rgb(73 57 0 / 80%);
+	font-size: 28px;
 }
