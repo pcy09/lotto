@@ -5,7 +5,24 @@ a {
 body * {
 	box-sizing: border-box;
 }
-.lotto {
+.tabGroup {
+	display: flex;
+	position: absolute;
+	top: 5%;
+	width: 100%;
+}
+.tabGroup li {
+	width: 50%;
+	border: 1px solid black;
+	text-align: center;
+	padding: 20px;
+	cursor: pointer;
+}
+.tabGroup li.active {
+	background-color: black;
+	color: #fff;
+}
+.wrapper {
 	width: 100%;
 	max-width: 1440px;
 	padding: 0 20px;
@@ -21,9 +38,10 @@ body * {
 	color: #fff;
 	background-color: black;
 	border-radius: 25px;
+	cursor: pointer;
 }
 
-.lottoGroup {
+.commonGroup {
 	display: flex;
 	gap: 15px;
 	width: auto;
@@ -34,13 +52,13 @@ body * {
 	background-color: #fafafa;
 	position: relative;
 }
-.lottoGroup p {
+.commonGroup p {
 	position: absolute;
 	bottom: -30px;
 	left: 50%;
 	transform: translateX(-50%);
 }
-.lottoGroup li {
+.commonGroup li {
 	width: 60px;
 	aspect-ratio: 1/1;
 	background-color: #aaa;
@@ -83,4 +101,46 @@ body * {
 	color: #fff;
 	text-shadow: 0px 0px 3px rgb(73 57 0 / 80%);
 	font-size: 28px;
+}
+.yearLotto {
+	display: none;
+}
+.yearContainer {
+	display: flex;
+	width: 100%;
+	max-width: 1440px;
+	padding: 0 20px;
+	justify-content: center;
+	margin: 0 auto;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+ul.yearGroup {
+	display: flex;
+}
+p.group {
+	display: flex;
+	width: auto;
+	justify-content: center;
+	padding: 30px;
+	border-radius: 30px;
+	background-color: #fafafa;
+}
+p.group span {
+	width: 60px;
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-shadow: 0px 0px 3px rgb(73 57 0 / 80%);
+	font-size: 28px;
+	background-color: #fff;
+	color: black;
+	border: 3px solid #c7c7c7;
+}
+.yearGroup.commonGroup li {
+	background-color: #fff;
+	color: black;
+	border: 5px solid #aaa;
 }

@@ -16,9 +16,13 @@
 		<script defer src="./js/main.js"></script>
 	</head>
 	<body>
-		<section class="lotto">
+		<ul class="tabGroup">
+			<li class="lottoTab active">로또</li>
+			<li class="yearTab">연금복권</li>
+		</ul>
+		<section class="lotto wrapper">
 			<button class="lottoPick pick">뽑기!!</button>
-			<ul class="lottoGroup">
+			<ul class="lottoGroup commonGroup">
 				<li>?</li>
 				<li>?</li>
 				<li>?</li>
@@ -32,17 +36,21 @@
 				<p>보너스 번호</p>
 			</div>
 		</section>
-		<section class="yearLotto">
+		<section class="yearLotto wrapper">
 			<button class="yearPick pick">뽑기!!</button>
-			<ul class="yearGroup">
-				<li>?</li>
-				<li>?</li>
-				<li>?</li>
-				<li>?</li>
-				<li>?</li>
-				<li>?</li>
-				<p>당첨 번호</p>
-			</ul>
+			<div class="yearContainer">
+				<p class="group">
+					<span>?조</span>
+				</p>
+				<ul class="yearGroup commonGroup">
+					<li>?</li>
+					<li>?</li>
+					<li>?</li>
+					<li>?</li>
+					<li>?</li>
+					<li>?</li>
+				</ul>
+			</div>
 		</section>
 	</body>
 </html>
